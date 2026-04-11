@@ -1,34 +1,141 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Títeres Papelin</title>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css"> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Títeres Papelin</title>
+  <meta name="description" content="Títeres de papel divertidos y fáciles de armar." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-    <header>
-        </header>
+  <header class="topbar">
+    <div class="container nav">
+      <div class="logo">Títeres <span>Papelin</span></div>
+      <nav>
+        <a href="#inicio" class="active">Inicio</a>
+        <a href="#titireres">Títeres</a>
+        <a href="#talleres">Talleres</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <a href="#" class="cart-btn">🛒 Mi Carrito</a>
+    </div>
+  </header>
 
-    <section class="hero">
-        </section>
+  <section class="hero" id="inicio">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>¡Diviértete con nuestros <br><span>Títeres de Papel!</span></h1>
+        <a href="#titireres" class="btn btn-yellow">Ver Títeres</a>
+      </div>
+    </div>
+  </section>
 
-    <section class="seccion-titeres">
-        <h2 class="titulo-seccion">Nuestros Títeres</h2>
-        <div class="contenedor-tarjetas">
-            </div>
-    </section>
+  <section class="products section-paper" id="titireres">
+    <div class="container">
+      <h2>Nuestros Títeres</h2>
+      <p class="subtitle">Divertidos y fáciles de armar</p>
 
-    <section class="seccion-talleres">
-        </section>
+      <div class="cards">
+        <article class="card orange">
+          <img src="https://via.placeholder.com/300x220?text=Animales" alt="Animales">
+          <div class="card-body">
+            <h3>Animales</h3>
+            <a href="#" class="btn small">Ver Más</a>
+          </div>
+        </article>
 
-    <section class="seccion-caracteristicas">
-        </section>
+        <article class="card red">
+          <img src="https://via.placeholder.com/300x220?text=Cuentos" alt="Cuentos">
+          <div class="card-body">
+            <h3>Cuentos</h3>
+            <a href="#" class="btn small">Ver Más</a>
+          </div>
+        </article>
 
-    <footer>
-        </footer>
+        <article class="card green">
+          <img src="https://via.placeholder.com/300x220?text=Descuento" alt="Descuento">
+          <div class="card-body">
+            <h3>Títeres en Descuento</h3>
+            <a href="#" class="btn small">Ver Más</a>
+          </div>
+        </article>
 
+        <article class="card blue">
+          <img src="https://via.placeholder.com/300x220?text=Profesiones" alt="Profesiones">
+          <div class="card-body">
+            <h3>Profesiones</h3>
+            <a href="#" class="btn small">Ver Más</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="workshops" id="talleres">
+    <div class="container workshop-grid">
+      <div class="workshop-text">
+        <h2>Crea y Juega</h2>
+        <p>Talleres de Títeres de Papel</p>
+        <a href="#" class="btn btn-orange">Inscríbete Aquí</a>
+      </div>
+      <div class="workshop-image">
+        <img src="https://via.placeholder.com/600x350?text=Talleres" alt="Talleres">
+      </div>
+    </div>
+  </section>
+
+  <section class="features section-paper" id="nosotros">
+    <div class="container feature-wrap">
+      <div class="feature-text">
+        <h2>¡Hechos con Imaginación!</h2>
+        <p class="subtitle">Títeres de papel para grandes y chicos</p>
+
+        <div class="feature-boxes">
+          <div class="feature-box">
+            <div class="icon">☀️</div>
+            <span>Fácil de Armar</span>
+          </div>
+          <div class="feature-box">
+            <div class="icon">🍃</div>
+            <span>Ecológicos y Creativos</span>
+          </div>
+          <div class="feature-box">
+            <div class="icon">🚚</div>
+            <span>Envíos a Todo el País</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-image">
+        <img src="https://via.placeholder.com/450x450?text=Niño+Títere" alt="Niño con títere">
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="contacto">
+    <div class="container footer-content">
+      <div>
+        <h4>Síguenos</h4>
+        <div class="socials">
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">YouTube</a>
+          <a href="#">Instagram</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="#">FAQ</a>
+        <a href="#">Política de Privacidad</a>
+        <a href="#">Términos y Condiciones</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
