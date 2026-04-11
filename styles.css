@@ -1,5 +1,69 @@
-body {
-  margin: 0;
-  font-family: Arial;
-  background: yellow;
+/* Estilos generales para esta sección */
+.seccion-titeres {
+  font-family: 'Fredoka One', cursive; /* Fuente parecida a la del diseño */
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f4e9d8; /* Color de fondo beige */
+}
+
+.titulo-seccion {
+  color: #1a5b9c;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+/* Usamos Flexbox para alinear las tarjetas una al lado de la otra */
+.contenedor-tarjetas {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Permite que bajen a otra línea en celulares */
+}
+
+/* Diseño de cada tarjeta */
+.tarjeta {
+  background-color: white;
+  border-radius: 15px;
+  padding: 15px;
+  width: 220px;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+  border: 3px solid #ddd;
+}
+
+.tarjeta.naranja { border-color: #ff8c00; }
+.tarjeta.rojo { border-color: #e53935; }
+
+.tarjeta h3 {
+  color: white;
+  background-color: #ff8c00; /* Fondo del título */
+  margin: -15px -15px 15px -15px;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+}
+
+.tarjeta.rojo h3 { background-color: #e53935; }
+
+.imagen-placeholder {
+  height: 150px;
+  background-color: #eee;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+/* Botones de "Ver Más" */
+.btn-ver-mas {
+  background-color: #ffb300;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 0 #f57c00; /* Efecto 3D del botón */
+  transition: transform 0.1s;
+}
+
+.btn-ver-mas:active {
+  transform: translateY(4px); /* Efecto de presionar */
+  box-shadow: 0 0 0 #f57c00;
 }
