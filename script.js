@@ -1,1 +1,1 @@
-console.log("Títeres Papelin listo 🎭");
+console.log("Títeres Papelin listo");
