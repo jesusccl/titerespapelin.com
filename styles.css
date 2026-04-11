@@ -1,38 +1,80 @@
 body {
-  font-family: Arial;
   margin: 0;
-  background: #f5f5f5;
-  text-align: center;
+  font-family: 'Comic Sans MS', Arial, sans-serif;
+  background: #fdf6ec;
 }
 
+/* HEADER */
 header {
-  background: #2daae1;
+  background: linear-gradient(90deg, #2daae1, #4cc3ff);
   color: white;
+  text-align: center;
   padding: 20px;
+  font-size: 28px;
+  font-weight: bold;
 }
 
+/* HERO */
 .hero {
   background: #87ceeb;
-  padding: 40px;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
 }
 
 button {
-  background: orange;
+  background: #ff9800;
   border: none;
-  padding: 10px 20px;
-  border-radius: 10px;
+  padding: 15px 30px;
+  border-radius: 12px;
+  font-size: 16px;
+  color: white;
   cursor: pointer;
+  transition: 0.3s;
 }
 
+button:hover {
+  background: #e68900;
+}
+
+/* CATEGORÍAS */
 .categorias {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
-  padding: 20px;
+  gap: 20px;
+  padding: 40px;
 }
 
+/* TARJETAS */
 .card {
   background: white;
+  padding: 25px;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+/* COLORES POR CATEGORÍA */
+.card:nth-child(1) { background: #ffe0b2; }
+.card:nth-child(2) { background: #ffccbc; }
+.card:nth-child(3) { background: #c8e6c9; }
+.card:nth-child(4) { background: #bbdefb; }
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
   padding: 20px;
-  border-radius: 15px;
+  background: #2daae1;
+  color: white;
 }
